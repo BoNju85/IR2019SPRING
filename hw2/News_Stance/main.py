@@ -70,8 +70,8 @@ for (query_id, query) in querys:
                         document_scores[doc] += dw * qw
                     else:
                         document_scores[doc] = dw * qw
-                    if doc in rel[:, 1]:
-                        document_scores[doc] += 10000* rel[rel[:, 1]==doc][0, 2]
+                    #if doc in rel[:, 1]:
+                    #    document_scores[doc] += 10000* rel[rel[:, 1]==doc][0, 2]
                     #print(document_scores[doc])
 
 
